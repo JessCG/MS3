@@ -1,6 +1,6 @@
 % MERGEPROCESSOR    Merges Multisizer III size distributions.
 %
-%   Errors? Ensure you have the most recent version at 
+%   Errors? Ensure you have the most recent version at https://github.com/JessCG/MS3.git
 %
 %   This version of the MergeProcessor incorporates lab dilutions, Gust
 %   sample sizes, and the MultiSizer pump rates.  If a dilution worksheet 

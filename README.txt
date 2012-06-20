@@ -1,3 +1,5 @@
+*The MS3 folder refers to the folder downloaded from https://github.com/JessCG/MS3.git It may be useful to rename the folder after download and move it to a convenient location on your computer.
+
 The MS3 folder contains all necessary functions and folder structure to run the script MergeProcessor.m (MS3 > matlab). The script was written by John Newgard (Dalhousie University) to merge size distributions obtained with a Multisizer 3, using 2 aperture tubes (30 and 200 microns) or 3 aperture tubes (30, 200 and 400 microns). When dilution sheets are included, the script merges using PPM values. When no dilution sheets are included, the script merges using % volume. More information can be found in the script itself.
 
 In order to run the script, users must enter the location of the MS3 folder on their computer in the file mergedir.m (MS3 > matlab).
