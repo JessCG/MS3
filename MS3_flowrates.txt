@@ -1,0 +1,7 @@
+% These are the flow rates, in ml/s, for the Multisizer III.
+% Rates were estimated by Jessica Carriere-Garwood, 2012.
+%
+% tube diam (um)    flow rate (ml/s)
+400 .4350
+200 .1602
+30  .003522
