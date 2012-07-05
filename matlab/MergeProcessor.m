@@ -115,6 +115,8 @@
 %Setting directories and function path. Ensure mergedir.m file has been
 %properly edited.
 
+warning off
+
 dir_root = mergedir;
 
 addpath([dir_root 'matlab' filesep]);
@@ -411,11 +413,11 @@ for ia = 1:length(samplenames) % For each set of samples...
     centv = 1/6*pi*centd1.^3; %um^3
     volparticles1 = numparticles1.*centv; %um^3
     volparticles2 = numparticles2.*centv;
-    ppm1_dilute_ms3 = volparticles1./vol_pumped(1)*conv_um3_to_ml; 
-    ppm2_dilute_ms3 = volparticles2./vol_pumped(2)*conv_um3_to_ml; 
+    ppm1_dilute_ms3 = volparticles1./vol_pumped(1)*conv_um3_to_ml*1e-06; 
+    ppm2_dilute_ms3 = volparticles2./vol_pumped(2)*conv_um3_to_ml*1e-06; 
     if ntubes==3
         volparticles3 = numparticles3.*centv;
-        ppm3_dilute_ms3 = volparticles3./vol_pumped(3)*conv_um3_to_ml;
+        ppm3_dilute_ms3 = volparticles3./vol_pumped(3)*conv_um3_to_ml*1e-06;
     end
     if DilutionsOK
         ppm1_stock = ppm1_dilute_ms3/lab_dilutions(1);
