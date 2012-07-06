@@ -413,11 +413,11 @@ for ia = 1:length(samplenames) % For each set of samples...
     centv = 1/6*pi*centd1.^3; %um^3
     volparticles1 = numparticles1.*centv; %um^3
     volparticles2 = numparticles2.*centv;
-    ppm1_dilute_ms3 = volparticles1./vol_pumped(1)*conv_um3_to_ml*1e-06; 
-    ppm2_dilute_ms3 = volparticles2./vol_pumped(2)*conv_um3_to_ml*1e-06; 
+    ppm1_dilute_ms3 = volparticles1./vol_pumped(1)*conv_um3_to_ml*1e06; 
+    ppm2_dilute_ms3 = volparticles2./vol_pumped(2)*conv_um3_to_ml*1e06; 
     if ntubes==3
         volparticles3 = numparticles3.*centv;
-        ppm3_dilute_ms3 = volparticles3./vol_pumped(3)*conv_um3_to_ml*1e-06;
+        ppm3_dilute_ms3 = volparticles3./vol_pumped(3)*conv_um3_to_ml*1e06;
     end
     if DilutionsOK
         ppm1_stock = ppm1_dilute_ms3/lab_dilutions(1);
@@ -621,7 +621,7 @@ for ia = 1:length(samplenames) % For each set of samples...
     % Convert merged ppm to merged numparticles
     if DilutionsOK
         merge_centv = 1/6*pi*merge_centd.^3; %um^3
-        merge_vol = merge_ppm*lab_vol_added./conv_um3_to_ml; % lab_vol_added is the volume of water added to the gust sediment sample
+        merge_vol = merge_ppm*lab_vol_added./conv_um3_to_ml/1e06; % lab_vol_added is the volume of water added to the gust sediment sample
         merge_numparticles = merge_vol./merge_centv;
     end
     merge_dvol = merge_ppm./sum(merge_ppm)*100;
