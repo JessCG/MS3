@@ -115,6 +115,8 @@
 %Setting directories and function path. Ensure mergedir.m file has been
 %properly edited.
 
+clear all
+close all
 warning off
 
 dir_root = mergedir;
