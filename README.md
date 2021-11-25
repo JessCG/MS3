@@ -8,7 +8,7 @@ When no dilution sheets are included for a sample, the script merges particle si
 
 Currently, the merging code is provided as a Matlab script entitled `MergeProcessor.m` in the folder `MS3/Matlab`. The script was originally written in the Hill Lab at Dalhousie University by John Newgard with input from Jessica C. Garwood. We anticipate also making R (near-future) and Python (eventually) codes available.
 
-# Folder descriptions
+# Folders
 - `Dilutions`: put dilution sheets corresponding to files to be merged in this directory. Follow format of sample files.
 - `ToMergeProcessor`: put Multisizer 3 output files in this directory. All files within the folder will be merged so it is important to remove previously merged files. Follow format of sample files. Note .csv format.
 - `Matlab`: this directory contains the main merging script (`MergeProcessor.m`) and all necessary functions.
@@ -21,8 +21,18 @@ Currently, the merging code is provided as a Matlab script entitled `MergeProces
 3. Transfer all Multisizer 3 output files to be merged into the directory called `ToMergeProcessor`.
 4. Open Matlab and navigate to the `MS3/Matlab` directory.
 5. Run the script `MergeProcessor.m`.
-6. Using the cursor, select the point where two particle size distributions should be merged. Only the position of the cursor along the x-axis is important.
+6. Using the cursor, select the point where the particle size distributions obtained with the 30- and 200-&mu;m aperture tubes should be merged. Only the position of the cursor along the x-axis is important.
+
+<p align="center">
+<img src="./.assets/img/MergingCursor.png" alt="MergingCursor" height="200"/>
+</p>
+
+7. Repeat for the 200- and 400-&mu;m aperture tubes if applicable.
 7. If satisfied, approve the selection by pressing enter or type `n` and try again.
+
+<img align="left" src="./.assets/img/MergedConc.png" alt="MergedConc" height="200"/>
+<img align="right" src="./.assets/img/MergedVolume.png" alt="MergedVolume" height="200"/>
+
 8. Repeat for every sample.
 9. The merged particle size distributions can now be found in the `MergedData` directory.
 
