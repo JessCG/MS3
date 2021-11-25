@@ -51,4 +51,4 @@ Although we set the Multisizer 3 output to 1/50-&phi; increments, particle size 
 <img src="./.assets/img/MergedBins.png" alt="MergedBins" width="400"/>
 </p>
 
-**Figure 3.** Merged grain size distributions (blue line; dots show the mid-points of merged bins) for the test Silikers grain size distributions provided with this code. Vertical lines show the lower edges of the small bins (grey) with one in ten showing the **edges** of the merged bins (black) and the **mid-points** of the merged bins (red).
+**Figure 3.** Merged grain size distributions (blue line; dots show the mid-points of merged bins) for the test Silikers grain size distributions provided with this code. Vertical lines show the lower edges of the small bins (grey) with one in ten showing the **edges** (black) and the **mid-points** of the merged bins (red).
