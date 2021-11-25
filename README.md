@@ -30,8 +30,10 @@ Currently, the merging code is provided as a Matlab script entitled `MergeProces
 7. Repeat for the 200- and 400-&mu;m aperture tubes if applicable.
 7. If satisfied, approve the selection by pressing enter or type `n` and try again.
 
-<img align="left" src="./.assets/img/MergedConc.png" alt="MergedConc" height="200"/>
-<img align="right" src="./.assets/img/MergedVolume.png" alt="MergedVolume" height="200"/>
+<p align="center">
+<img src="./.assets/img/MergedConc.png" alt="MergedConc" height="200"/>
+<img src="./.assets/img/MergedVolume.png" alt="MergedVolume" height="200"/>
+</p>
 
 8. Repeat for every sample.
 9. The merged particle size distributions can now be found in the `MergedData` directory.
