@@ -16,7 +16,7 @@ Currently, the merging code is provided as a Matlab script entitled `MergeProces
 
 
 # Using this code
-1. `Download the `MS3` folder from `https://github.com/JessCG/MS3.git` 
+1. Download the `MS3` folder from `https://github.com/JessCG/MS3.git` 
 2. In order to calculate particle concentrations, the flow rates specific to an instrument and aperture tube must be calculated. Refer to the Multisizer 3 User Manual to do so and modify the `MS3_flowrates.txt` file (found in the `MS3` folder) accordingly. This step only needs to be done once per aperture tube.
 3. Transfer all Multisizer 3 output files to be merged into the directory called `ToMergeProcessor`.
 4. Open Matlab and navigate to the `MS3/Matlab` directory.
