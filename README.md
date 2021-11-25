@@ -2,7 +2,7 @@ MS3
 ===
 
 # Overview
-The MS3 folder contains code to merge size distributions obtained with a Multisizer 3, using 2 aperture tubes (30 and 200 &mu;m) or 3 aperture tubes (30, 200 and 400 &mu;m). Sample Multisizer 3 output files are provided in the folder `ToMergeProcessor`. The code provided is designed to work with this specific output format and naming convention. Sample dilution sheets are also provided in the folder `Dilutions` to allow for calculations of particle concentrations (optional).
+The `MS3` folder contains code to merge size distributions obtained with a Multisizer 3, using 2 aperture tubes (30 and 200 &mu;m) or 3 aperture tubes (30, 200 and 400 &mu;m). Sample Multisizer 3 output files are provided in the folder `ToMergeProcessor`. The code provided is designed to work with this specific output format and naming convention. Sample dilution sheets are also provided in the folder `Dilutions` to allow for calculations of particle concentrations (optional).
 
 When no dilution sheets are included for a sample, the script merges particle size distributions using relative particle volume (% volume; normalized to 100%), assuming equivalent spherical diameters. When dilution sheets are included, the script merges particle size distributions using their concentrations in parts per million (ppm).
 
@@ -17,7 +17,7 @@ Currently, the merging code is provided in the form of a Matlab script entitled 
 
 # Using this code
 1. Download the `MS3` folder from `https://github.com/JessCG/MS3.git` 
-2. In order to calculate particle concentrations, the flow rates specific to an instrument and aperture tube must be calculated. Refer to the Multisizer 3 User Manual to do so and modify the `MS3_flowrates.txt` file (found in the `MS3` folder) accordingly. This step only needs to be done once per aperture tube.
+2. In order to calculate particle concentrations, the flow rate specific to an instrument and aperture tube combination must be calculated. Refer to the Multisizer 3 User Manual to do so and modify the `MS3_flowrates.txt` file (found in the `MS3` folder) accordingly. This step only needs to be done once per aperture tube.
 3. Transfer all Multisizer 3 output files to be merged into the directory called `ToMergeProcessor`.
 4. Open Matlab and navigate to the `MS3/Matlab` directory.
 5. Run the script `MergeProcessor.m`.
