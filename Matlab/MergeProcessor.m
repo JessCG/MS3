@@ -120,7 +120,7 @@ close all
 
 warning off
 
-dir_root = mergedir;
+dir_root = '../';
 
 addpath([dir_root 'matlab' filesep]);
 dir_data = [dir_root 'ToMergeProcessor' filesep];
