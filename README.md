@@ -31,6 +31,8 @@ The particle size distributions reported by the Multisizer 3 are in $\mu$m, but 
 
 Although the Multisizer 3 output is set to $1/50$-$/phi$ increments, particle size distributions obtained with earlier versions of the instrument were reported in $1/5$-$/phi$ increments. To be consistent with previously reported particle size distributions, the `MergeProcessor` code  combines 10 Multisizer 3 bins (dubbed small bins) for each bin in the merged distributions (dubbed merged bins). To have a defined mid-point after combining 10 small bins, the Multisizer 3 output is set using lower bin edges (i.e., the lower bin edge of the 6th small bin becomes the mid-point of the merged bin).
 
+<p align="center">
 <img src="./.assets/img/MergedBins.png" alt="MergedBins" width="300"/>
+</p>
 
 **Figure 1.** Sample merged Silikers grain size distribution (blue line; dots show mid-points of merged bins). Grey vertical lines show the lower edges of the small bins. Black and red vertical lines show one in ten small-bin edge, i.e., the merged bin edges and merged bin center points, respectively.
