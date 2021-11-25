@@ -109,11 +109,11 @@
 %       Col 5. normalized volume concentration (%) %
 %
 %
-%   By John Newgard, June 2012.  john_newgard@hotmail.com
+%   By John Newgard, June 2012.  
 
 
-%Setting directories and function path. Ensure mergedir.m file has been
-%properly edited.
+
+
 
 clear all
 close all
