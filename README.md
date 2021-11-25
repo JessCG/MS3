@@ -37,7 +37,7 @@ Currently, the merging code is provided as a Matlab script entitled `MergeProces
 <img src="./.assets/img/MergedVolume.png" alt="MergedVolume" height="350"/>
 </p>
 
-**Figure 2.** Screenshots showing a merged grain size distribution (black) using volume concentration (left) or volume percentage (right) for the test Silikers distribution provided with this code. Note that when using concentrations, the distributions obtained with the 30- (red) and 400-&mu;m (green) aperture tubes are brought to the distribution obtained with the 200-&mu;m (blue) aperture tube. The grey vertical lines show the points where the distributions were merged.
+**Figure 2.** Screenshots showing a merged grain size distribution (black) using volume concentration (left) or volume percentage (right) for the test Silikers distributions provided with this code. Note that when using concentrations, the distributions obtained with the 30- (red) and 400-&mu;m (green) aperture tubes are brought to the distribution obtained with the 200-&mu;m (blue) aperture tube. The grey vertical lines show the points where the distributions were merged.
 
 
 9. Repeat for every sample.
@@ -52,4 +52,4 @@ Although the Multisizer 3 output is set to 1/50-&phi; increments, particle size 
 <img src="./.assets/img/MergedBins.png" alt="MergedBins" width="400"/>
 </p>
 
-**Figure 3.** Sample merged Silikers grain size distribution (blue line; dots show mid-points of merged bins). Grey vertical lines show the lower edges of the small bins. Black and red vertical lines show one in ten small-bin edge, i.e., the merged bin edges and merged bin center points, respectively.
+**Figure 3.** Merged grain size distributions (blue line; dots show mid-points of merged bins) for the test Silikers grain size distributions provided with this code. Vertical lines show the lower edges of the small bins (grey) with one in ten showing the merged bin edges (black) and the merged bin mid-points (red).
