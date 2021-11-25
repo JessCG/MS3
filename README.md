@@ -27,17 +27,17 @@ Currently, the merging code is provided as a Matlab script entitled `MergeProces
 <img src="./.assets/img/MergingCursor.png" alt="MergingCursor" height="300"/>
 </p>
 
-**Figure 1.** [add description]
+**Figure 1.** Screenshot of a user selecting the merge point for the grain size distributions obtained with the 30- (red) and 200-&mu;m (blue) aperture tubes. Only the x-position of the cursor is considered by the code.
 
 7. Repeat for the 200- and 400-&mu;m aperture tubes if applicable.
-8. If satisfied, approve the selection by pressing enter or type `n` and try again.
+8. If satisfied, approve the selection by pressing `enter` or type `n` then press `enter` to try again.
 
 <p align="center">
-<img src="./.assets/img/MergedConc.png" alt="MergedConc" height="300"/>
-<img src="./.assets/img/MergedVolume.png" alt="MergedVolume" height="300"/>
+<img src="./.assets/img/MergedConc.png" alt="MergedConc" height="350"/>
+<img src="./.assets/img/MergedVolume.png" alt="MergedVolume" height="350"/>
 </p>
 
-**Figure 2.** [add description]
+**Figure 2.** Screenshots showing a merged grain size distribution (black) using volume concentration (left) or volume percentage (right) for the test Silikers distribution provided with this code. Note that when using concentrations, the distributions obtained with the 30- (red) and 400-&mu;m (green) aperture tubes are brought to the distribution obtained with the 200-&mu;m (blue) aperture tube. The grey vertical lines show the points where the distributions were merged.
 
 
 9. Repeat for every sample.
