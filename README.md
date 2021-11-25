@@ -26,15 +26,13 @@ Currently, the merging code is provided as a Matlab script entitled `MergeProces
 8. Repeat for every sample.
 9. The merged particle size distributions can now be found in the `MergedData` directory.
 
-# Size bins (&phi $\phi$ increments)
-The particle size distributions reported by the Multisizer 3 are in $\mu$m, but the limits are set using $1/50$-$\phi$ increments, where &phi; = -log_2(d/1000) and _d_ is the particle diameter in $\mu$m.
+# Size bins (&phi; increments)
+The particle size distributions reported by the Multisizer 3 are in &mu;m, but the limits are set using 1/50-&phi; increments, where &phi; = -log_2(d/1000) and _d_ is the particle diameter in &mu;m.
 
-<img src="https://render.githubusercontent.com/render/math?math=\phi = -log_2(d/1000)">
-
-Although the Multisizer 3 output is set to $1/50$-$/phi$ increments, particle size distributions obtained with earlier versions of the instrument were reported in $1/5$-$/phi$ increments. To be consistent with previously reported particle size distributions, the `MergeProcessor` code  combines 10 Multisizer 3 bins (dubbed small bins) for each bin in the merged distributions (dubbed merged bins). To have a defined mid-point after combining 10 small bins, the Multisizer 3 output is set using lower bin edges (i.e., the lower bin edge of the 6th small bin becomes the mid-point of the merged bin).
+Although the Multisizer 3 output is set to 1/50-&phi; increments, particle size distributions obtained with earlier versions of the instrument were reported in 1/5-&phi; increments. To be consistent with previously reported particle size distributions, the `MergeProcessor` code  combines 10 Multisizer 3 bins (dubbed small bins) for each bin in the merged distributions (dubbed merged bins). To have a defined mid-point after combining 10 small bins, the Multisizer 3 output is set using lower bin edges (i.e., the lower bin edge of the 6th small bin becomes the mid-point of the merged bin).
 
 <p align="center">
-<img src="./.assets/img/MergedBins.png" alt="MergedBins" width="300"/>
+<img src="./.assets/img/MergedBins.png" alt="MergedBins" width="400"/>
 </p>
 
 **Figure 1.** Sample merged Silikers grain size distribution (blue line; dots show mid-points of merged bins). Grey vertical lines show the lower edges of the small bins. Black and red vertical lines show one in ten small-bin edge, i.e., the merged bin edges and merged bin center points, respectively.
