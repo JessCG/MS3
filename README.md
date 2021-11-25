@@ -40,12 +40,12 @@ Currently, the merging code is provided in the form of a Matlab script entitled 
 **Figure 2.** Screenshots showing a merged grain size distribution (black) using volume concentration (left) or volume percent (right) for the test Silikers distributions provided with this code. Note that when using concentrations, the distributions obtained with the 30- (red) and 400-&mu;m (green) aperture tubes are brought to the distribution obtained with the 200-&mu;m (blue) aperture tube. The grey vertical lines show the points where the distributions were merged.
 
 9. Repeat for every sample.
-10. The merged particle size distributions can now be found in the `MergedData` directory.
+10. The merged particle size distributions can now be found in the `MergedData` directory. Particle diameters are in &mu;m and the mid point of each bin is reported. 
 
 # Size bins (&phi; increments)
 The particle size distributions reported by the Multisizer 3 are in &mu;m, but we set the bin limits using 1/50-&phi; increments, where &phi; = -log<sub>2</sub>(d/1000) and _d_ is the particle diameter in &mu;m.
 
-Although we set the Multisizer 3 output to 1/50-&phi; increments, particle size distributions obtained with earlier versions of the instrument were reported in 1/5-&phi; increments. To be consistent with previously reported particle size distributions, the `MergeProcessor` code  combines 10 Multisizer 3 bins (dubbed _small bins_) for each bin in the merged distributions (dubbed _merged bins_). To have a defined mid-point after combining 10 small bins, the Multisizer 3 output is set using lower bin edges (i.e., the lower bin edge of the 6th small bin becomes the mid-point of the merged bin).
+Although we set the Multisizer 3 output to 1/50-&phi; increments, particle size distributions obtained with earlier versions of the instrument were reported in 1/5-&phi; increments. To be consistent with previously reported particle size distributions, the `MergeProcessor` code  combines 10 Multisizer 3 bins (dubbed _small bins_) for each bin in the merged distributions (dubbed _merged bins_). To have a defined mid-point for each merged bin, the Multisizer 3 output is set using lower bin edges (i.e., the lower bin edge of the 6th small bin becomes the mid-point of the merged bin).
 
 <p align="center">
 <img src="./.assets/img/MergedBins.png" alt="MergedBins" width="400"/>
