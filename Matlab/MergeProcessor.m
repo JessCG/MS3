@@ -72,7 +72,7 @@
 %              ----- Dilutions\ (dilutions worksheets reside here)
 %             |
 %             |
-%              ----- matlab (recommended, but not necessary; you could keep 
+%              ----- Matlab (recommended, but not necessary; you could keep 
 %             |                 your .m files here)
 %             |
 %              ----- RawData (recommended, but not necessary)
@@ -122,7 +122,7 @@ warning off
 
 dir_root = '../';
 
-addpath([dir_root 'matlab' filesep]);
+addpath([dir_root 'Matlab' filesep]);
 dir_data = [dir_root 'ToMergeProcessor' filesep];
 dir_merged = [dir_root 'MergedData' filesep];
 dir_fig = [dir_merged 'figures' filesep];
